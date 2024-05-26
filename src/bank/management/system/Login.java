@@ -103,7 +103,7 @@ public class Login extends JFrame implements ActionListener {
                 if(result.next()){
                     setVisible(false);
                     new main_class(pin);
-                }else{
+                }else{s
                     JOptionPane.showMessageDialog(null,"Incorrect Credentials");
                 }
 

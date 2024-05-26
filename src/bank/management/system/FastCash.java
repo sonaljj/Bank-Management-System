@@ -83,7 +83,6 @@ public class FastCash extends JFrame implements ActionListener {
 
         setSize(1550, 800);
         setLocation(0,0);
-        setUndecorated(true);
         setVisible(true);
         setLayout(null);
     }

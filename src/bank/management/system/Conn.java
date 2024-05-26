@@ -8,11 +8,7 @@ public class Conn {
     public Conn (){
         try
         {
-            // Retrieve database connection parameters from environment variables
-            String url = System.getenv("DB_URL");
-            String username = System.getenv("DB_USER");
-            String password = System.getenv("DB_PASSWORD");
-            connection =  DriverManager.getConnection("jdbc:mysql://localhost:3308/banksystem", "root", "mysql@28");
+            connection =  DriverManager.getConnection("jdbc:mysql://localhost:3308/banksystem", "username", "password");
             statement = connection.createStatement();
         }
         catch (Exception e)

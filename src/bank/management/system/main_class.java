@@ -81,7 +81,6 @@ public class main_class extends JFrame implements ActionListener {
 
         setSize(1550, 800);
         setLocation(0,0);
-        setUndecorated(true);
         setVisible(true);
         setLayout(null);
 
@@ -92,25 +91,25 @@ public class main_class extends JFrame implements ActionListener {
         if (e.getSource()==b1){
             new Deposit(pin);
             setVisible(false);
-        } else if (e.getSource()==b2) {
+        } if (e.getSource()==b2) {
             new Withdraw(pin);
             setVisible(false);
 
-        }else if (e.getSource()==b3) {
+        }if (e.getSource()==b3) {
             new FastCash(pin);
             setVisible(false);
-        }else if (e.getSource()==b4) {
+        }if (e.getSource()==b4) {
             new Bank(pin);
             setVisible(false);
 
-        }else if (e.getSource()==b5) {
+        }if (e.getSource()==b5) {
             new Pin(pin);
             setVisible(false);
-        }else if (e.getSource()==b6) {
+        }if (e.getSource()==b6) {
             new BalanceEnquiry(pin);
             setVisible(false);
 
-        }else if (e.getSource()==b7) {
+        }if (e.getSource()==b7) {
             System.exit(0);
 
         }
